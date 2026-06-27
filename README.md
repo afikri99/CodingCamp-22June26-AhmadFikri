@@ -109,5 +109,5 @@ Minimum viewport: **320px** (mobile-friendly).
 2. Hanya **1 file JavaScript** di dalam `js/`
 3. Kode harus bersih dan mudah dibaca
 
-Aplikasi website ini dibuat dengan sepenuh hati dan perasaan menyenangkan menggunakan Kiro dan bantuan dari AI Agent. Terima kasih dengna model-model yang sangat variatif ini
+Aplikasi website ini dibuat dengan sepenuh hati dan perasaan menyenangkan menggunakan Kiro dan bantuan dari AI Agent. Terima kasih dengan model-model yang sangat variatif ini
 ![Logo](https://fikriahmad.my.id/wp-content/uploads/2024/02/logo_fikriahmadv2_blue.png)
