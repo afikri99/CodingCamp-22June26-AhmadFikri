@@ -430,10 +430,24 @@
     if (typeof Chart === "undefined") return;
     const filtered = getFilteredTransactions();
     const sums = calcCategorySums(filtered);
+    const chartWrapper = document.getElementById("chart-wrapper");
 
     // Filter out categories with zero sum
     const activeCategories = categories.filter((_, i) => sums[i] > 0);
     const activeSums = sums.filter(s => s > 0);
+
+    // Hide chart wrapper when no data
+    if (activeSums.length === 0) {
+      chartWrapper.classList.add("hidden");
+      if (chartInstance) {
+        chartInstance.destroy();
+        chartInstance = null;
+      }
+      return;
+    }
+
+    // Show chart wrapper when there is data
+    chartWrapper.classList.remove("hidden");
 
     if (chartInstance) {
       chartInstance.data.labels = activeCategories.map(c => c.name);
